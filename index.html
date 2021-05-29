@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Srujans Portfolio</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+</head>
+<script type="text/javascript">
+    function validateContactForm() {
+        var valid = true;
+
+        $(".info").html("");
+        $(".form-control").css('color', 'red');
+        var userName = $("#name").val();
+        var userEmail = $("#email").val();
+        var usermessage = $("#message").val();
+
+        if (userName == "") {
+            $("#userName-info").html("Required.");
+            $("#userName-info").css('color', 'red');
+            valid = false;
+        }
+        if (userEmail == "") {
+            $("#userEmail-info").html("Required.");
+            $("#userEmail-info").css('color', 'red ');
+            valid = false;
+        }
+        if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+            $("#userEmail-info").html("Invalid Email Address.");
+            $("#uuserEmail-info").css('color', 'red ');
+            valid = false;
+        }
+        if (usermessage == "") {
+            $("#userMessage-info").html("Required.");
+            $("#userMessage-info").css('color', 'red ');
+            valid = false;
+        }
+        return valid;
+    }
+</script>
+
+<body>
+
+    <!-- preloader section -->
+    <section class="preloader">
+        <div class="sk-spinner sk-spinner-pulse"></div>
+    </section>
+
+    <!-- navigation section -->
+    <section class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"><i class="fa fa-angellist" aria-hidden="true"></i>Srujan</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" id="navs">
+                    <li><a href="#home" class="smoothScroll">HOME</a></li>
+                    <li><a href="#skills" class="smoothScroll">SKILLS</a></li>
+                    <li><a href="#work" class="smoothScroll">WORK</a></li>
+                    <li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- home section -->
+    <section id="home" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1>Hello..</h1>
+                    <h2>I am Srujan Bambade</h2>
+                    <div class="col-md-12 col-sm-12">
+                        <p>Hi.., I am a intermediate Full Stack Web Developer. I create Front-end components,<br> such as User Interfaces and Back-end components,<br> such as Application Code and Databases..<br> I like to learn the latest technologies and
+                            continuously improves myself.<br> I always try to help other people. My knowledge of .NET and JavaScript will help me to create a product that will meet your expectations. </p>
+                        <a href="#skills" class="smoothScroll btn btn-default"> MORE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+                    <h1 class="heading">Technical Skills</h1>
+                    <hr>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="stitle"> <i class="fa fa-html5" aria-hidden="true"></i>HTML/CSS</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="stitle"> <i class="fa fa-code" aria-hidden="true"></i>JavaScript</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="stitle"> <i class="fa fa-code" aria-hidden="true"></i> jquery</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="stitle"> <i class="fa fa-code" aria-hidden="true"></i>Asp.Net</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="stitle"> <i class="fa fa-code" aria-hidden="true"></i>Java, C#</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="stitle"> <i class="fa fa-database" aria-hidden="true"></i> SQL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- work section -->
+    <section id="work" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+                    <h1 class="heading">MY WORK</h1>
+                    <hr>
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="images/gallery-img1.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img1.jpg" alt="gallery img"></a>
+                    <div>
+                        <h3>My Portfolio</h3>
+                        <span>HTML / CSS/ JQUERY</span>
+                    </div>
+
+                    <!--a href="images/gallery-img2.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img2.jpg" alt="gallery img"></a>
+                    <div>
+                        <h3></h3>
+                        <span></span>
+                    </div-->
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <a href="images/gallery-img3.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img3.jpg" alt="gallery img"></a>
+                    <div>
+                        <h3>Invezta(Assignment)</h3>
+                        <span>HTML/ CSS / JAVASCRIPT</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
+                    <a href="images/gallery-img4.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img4.jpg" alt="gallery img"></a>
+                    <div>
+                        <h3>Hobiz</h3>
+                        <span>PHP /CSS/ JQUERY</span>
+                    </div>
+                    <!--a href="images/gallery-img5.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img5.jpg" alt="gallery img"></a>
+                    <div>
+                        <h3></h3>
+                        <span></span>
+                    </div-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- menu section -->
+    <section id="menu" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+                    <h1 class="heading">What i can do</h1>
+                    <hr>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="title"> <i class="fa fa-television" aria-hidden="true"></i> Web Design</div>
+
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="title"> <i class="fa fa-square-o" aria-hidden="true"></i> UI Editing</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="title"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Concepts Stratergy
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="title"> <i class="fa fa-eye" aria-hidden="true"></i> Product Design</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="title"> <i class="fa fa-square-o" aria-hidden="true"></i> Backend Design</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="title"> <i class="fa fa-database" aria-hidden="true"></i> Database Design</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact section -->
+    <section id="contact" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-12 text-center">
+                    <h1 class="heading">Contact ME</h1>
+                    <hr>
+                </div>
+                <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+                    <form action="" name="frmContact" frmContact "" method="post" enctype="multipart/form-data" onsubmit="return validateContactForm()">
+                        <div class="col-md-6 col-sm-6">
+                            <span id="userName-info" class="info"></span><br>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <span id="userEmail-info" class="info"></span><br>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <span id="userMessage-info" class="info"></span><br>
+                            <textarea name="message" rows="8" class="form-control" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                            <input name="send" type="submit" class="form-control" id="submit" value="send">
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-1">
+                    <?php
+                    if (! empty($message)) {
+                        ?>
+                        <p class='<?php echo $type; ?>Message'>
+                            <?php echo $message; ?>
+                        </p>
+                        <?php
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer class="parallax-section" id="footerr">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <h2 class="heading">Contact Info.</h2>
+                    <div class="ph">
+                        <p><i class="fa fa-phone"></i> Phone</p>
+                        <h4>7743858689</h4>
+                    </div>
+                    <div class="address">
+                        <p><i class="fa fa-map-marker"></i> Address</p>
+                        <h4>Mumbai, Maharashtra</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <h2 class="heading">Follow me</h2>
+                    <ul class="social-icon">
+                        <li>
+                            <a href="https://www.facebook.com/sruj.bambade/" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/__shrujan.__/" class="fa fa-instagram wow bounceIn" data-wow-delay="0.6s"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/srujan-bambade-74159b146/" class="fa fa-linkedin wow bounceIn" data-wow-delay="0.9s"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/SrujanBambade" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a>
+                        </li>
+                    </ul>
+                    2020|Srujan Bambade
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT JS FILES -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!--script src="https://code.jquery.com/jquery-2.1.1.min.js"></script-->
+
+</body>
+
+</html>
