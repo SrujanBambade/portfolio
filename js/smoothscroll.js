@@ -4,13 +4,6 @@
  */
 if (!window['jQuery']) alert('The jQuery library must be included before the smoothscroll.js file.  The plugin will not work propery.');
 
-/**
- * jQuery.ScrollTo - Easy element scrolling using jQuery.
- * Copyright (c) 2007-2013 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
- * Dual licensed under MIT and GPL.
- * @author Ariel Flesler
- * @version 1.4.3.1
- */
 ;
 (function($) {
     var h = $.scrollTo = function(a, b, c) { $(window).scrollTo(a, b, c) };
