@@ -110,7 +110,7 @@ if (!window['jQuery']) alert('The jQuery library must be included before the smo
         var h = e.hash.slice(1),
             f = document.getElementById(h) || document.getElementsByName(h)[0];
         if (f) {
-            a && a.PreventDefault();
+            a && a.Default();
             var c = b(d.target);
             if (!(d.lock && c.is(":animated") || d.onBefore && !1 === d.onBefore(a, f, c))) {
                 d.stop && c._scrollable().stop(!0);
