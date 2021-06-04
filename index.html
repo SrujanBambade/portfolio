@@ -17,44 +17,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style type="text/css" media="screen">
+        .progress-bar {
+            background-color: #fefefe;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+            margin: 13px;
+            height: 15px;
+            width: 500px;
+            max-width: 100%;
+        }
+        
+        .progress {
+            background: #c7f76f;
+            background: -webkit-linear-gradient(to bottom, #569dfa, #569dfa);
+            background: linear-gradient(to bottom, #569dfa, #569dfa);
+            border-radius: 3px;
+            height: 13px;
+            width: 0;
+            margin-left: -15px;
+            transition: width 1.5s ease-in;
+        }
+    </style>
 </head>
-<script type="text/javascript">
-    function validateContactForm() {
-        var valid = true;
 
-        $(".info").html("");
-        $(".form-control").css('color', 'red');
-        var userName = $("#name").val();
-        var userEmail = $("#email").val();
-        var usermessage = $("#message").val();
-
-        if (userName == "") {
-            $("#userName-info").html("Required.");
-            $("#userName-info").css('color', 'red');
-            valid = false;
-            alert("Please Enter Name");
-        }
-        if (userEmail == "") {
-            $("#userEmail-info").html("Required.");
-            $("#userEmail-info").css('color', 'red ');
-            valid = false;
-            alert("Please Enter Name");
-        }
-        if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-            $("#userEmail-info").html("Invalid Email Address.");
-            $("#uuserEmail-info").css('color', 'red ');
-            valid = false;
-            alert("Please Enter Valid Email");
-        }
-        if (usermessage == "") {
-            $("#userMessage-info").html("Required.");
-            $("#userMessage-info").css('color', 'red ');
-            valid = false;
-            alert("Please Write some message!!!");
-        }
-        return valid;
-    }
-</script>
 
 <body>
 
@@ -114,44 +101,44 @@
                     <h1 class="heading">Technical Skills</h1>
                      <hr> 
                 </div>
-                <div class="col-md-6 col-sm-12"><b>HTML -75%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>HTML</b><span style="float: right; margin-right: 30px;">75%</span>
+                    <div class="progress-bar">
+                        <div data-size="75" class="progress"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12"><b>CSS -70%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>CSS</b><span style="float: right; margin-right: 30px;">70%</span>
+                    <div class="progress-bar">
+                        <div data-size="70" class="progress"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12"><b>JAVASCRIPT -60%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>JAVASCRIPT</b><span style="float: right; margin-right: 30px;">60%</span>
+                    <div class="progress-bar">
+                        <div data-size="60" class="progress"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12"><b>JQUERY -60%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>JQUERY</b><span style="float: right; margin-right: 30px;">60%</span>
+                    <div class="progress-bar">
+                        <div data-size="60" class="progress"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12"><b>ASP.NET -70%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>ASP.NET</b><span style="float: right; margin-right: 30px;">70%</span>
+                    <div class="progress-bar">
+                        <div data-size="70" class="progress"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12"><b>C# -60%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>C#</b><span style="float: right; margin-right: 30px;">65%</span>
+                    <div class="progress-bar">
+                        <div data-size="65" class="progress"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12"><b>JAVA -60%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>JAVA</b><span style="float: right; margin-right: 30px;">60%</span>
+                    <div class="progress-bar">
+                        <div data-size="60" class="progress"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12"><b>SQL -70%</b>
-                    <div class="progress" style="height:15px">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-md-6 col-sm-6 "><b>SQ</b><span style="float: right; margin-right: 30px;">70%</span>
+                    <div class="progress-bar">
+                        <div data-size="70" class="progress"></div>
                     </div>
                 </div>
             </div>
