@@ -33,9 +33,13 @@
         }
         
         .progress {
+            background: #c7f76f;
+            background: -webkit-linear-gradient(to bottom, #569dfa, #569dfa);
+            background: linear-gradient(to bottom, #569dfa, #569dfa);
             border-radius: 3px;
             height: 13px;
             width: 0;
+            transition: width 2.5s ease-in;
         }
     </style>
 </head>
@@ -101,42 +105,42 @@
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>HTML</b><span style="float: right; margin-right: 30px;">75%</span>
                     <div class="progress-bar">
-                        <div data-percent="75" class="progress" data-color="#ff5721"></div>
+                        <div data-size="75" class="progress"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>CSS</b><span style="float: right; margin-right: 30px;">70%</span>
                     <div class="progress-bar">
-                        <div data-percent="70" class="progress" data-color="#009acd"></div>
+                        <div data-size="70" class="progress"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>JAVASCRIPT</b><span style="float: right; margin-right: 30px;">60%</span>
                     <div class="progress-bar">
-                        <div data-percent="60" class="progress" data-color="#f1c40f"></div>
+                        <div data-size="60" class="progress"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>JQUERY</b><span style="float: right; margin-right: 30px;">60%</span>
                     <div class="progress-bar">
-                        <div data-percent="60" class="progress" data-color="#34495e"></div>
+                        <div data-size="60" class="progress"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>ASP.NET</b><span style="float: right; margin-right: 30px;">70%</span>
                     <div class="progress-bar">
-                        <div data-percent="70" class="progress"  data-color="#05bbcc"></div>
+                        <div data-size="70" class="progress"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>C#</b><span style="float: right; margin-right: 30px;">65%</span>
                     <div class="progress-bar">
-                        <div data-percent="65" class="progress" data-color="#6600ff"></div>
+                        <div data-size="65" class="progress"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>JAVA</b><span style="float: right; margin-right: 30px;">60%</span>
                     <div class="progress-bar">
-                        <div data-percent="60" class="progress" data-color="#CC1100"></div>
+                        <div data-size="60" class="progress"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>SQL</b><span style="float: right; margin-right: 30px;">70%</span>
                     <div class="progress-bar">
-                        <div data-percent="70" class="progress" data-color="#7f8778"></div>
+                        <div data-size="70" class="progress"></div>
                     </div>
                 </div>
                 <script>
@@ -303,7 +307,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.parallax.js"></script>
-    <script src="js/smoothscroll.js"></script>
     <script src="js/nivo-lightbox.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
