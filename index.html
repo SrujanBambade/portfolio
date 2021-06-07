@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="css/nivo_themes/default/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
         <style type="text/css" media="screen">
+       /* Skills section */
         .progress-bar {
             background-color: #fefefe;
             border-radius: 3px;
@@ -31,13 +33,9 @@
         }
         
         .progress {
-            background: #c7f76f;
-            background: -webkit-linear-gradient(to bottom, #569dfa, #569dfa);
-            background: linear-gradient(to bottom, #569dfa, #569dfa);
             border-radius: 3px;
             height: 13px;
             width: 0;
-            transition: width 2.5s ease-in;
         }
     </style>
 </head>
@@ -103,44 +101,49 @@
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>HTML</b><span style="float: right; margin-right: 30px;">75%</span>
                     <div class="progress-bar">
-                        <div data-size="75" class="progress"></div>
+                        <div data-percent="75" class="progress" data-color="#ff5721"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>CSS</b><span style="float: right; margin-right: 30px;">70%</span>
                     <div class="progress-bar">
-                        <div data-size="70" class="progress"></div>
+                        <div data-percent="70" class="progress" data-color="#009acd"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>JAVASCRIPT</b><span style="float: right; margin-right: 30px;">60%</span>
                     <div class="progress-bar">
-                        <div data-size="60" class="progress"></div>
+                        <div data-percent="60" class="progress" data-color="#f1c40f"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>JQUERY</b><span style="float: right; margin-right: 30px;">60%</span>
                     <div class="progress-bar">
-                        <div data-size="60" class="progress"></div>
+                        <div data-percent="60" class="progress" data-color="#34495e"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>ASP.NET</b><span style="float: right; margin-right: 30px;">70%</span>
                     <div class="progress-bar">
-                        <div data-size="70" class="progress"></div>
+                        <div data-percent="70" class="progress"  data-color="#05bbcc"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>C#</b><span style="float: right; margin-right: 30px;">65%</span>
                     <div class="progress-bar">
-                        <div data-size="65" class="progress"></div>
+                        <div data-percent="65" class="progress" data-color="#6600ff"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>JAVA</b><span style="float: right; margin-right: 30px;">60%</span>
                     <div class="progress-bar">
-                        <div data-size="60" class="progress"></div>
+                        <div data-percent="60" class="progress" data-color="#CC1100"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 "><b>SQL</b><span style="float: right; margin-right: 30px;">70%</span>
                     <div class="progress-bar">
-                        <div data-size="70" class="progress"></div>
+                        <div data-percent="70" class="progress" data-color="#7f8778"></div>
                     </div>
                 </div>
+                <script>
+                    $(document).ready(function() {
+                        $(".progress-bar").ProgressBar();
+                    });
+                </script>
             </div>
         </div>
     </section>
