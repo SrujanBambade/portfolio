@@ -26,10 +26,7 @@ p {
     line-height: 28px;
 }
 
-hr {
-    border-top: 2px solid #00000;
-    width: 120px;
-}
+
 
 #menu,
 #skills,
@@ -185,37 +182,16 @@ hr {
 }
 
 
-/* Skills section 
 
-.stitle {
-    font-size: 28px;
-    margin-left: 65px;
-    margin-right: 65px;
-    background-color: #e1eff8;
-}
-
-#skills h4 {
-    line-height: 1.5;
-}
-
-#skills .col-md-8 {
-    padding-bottom: 42px;
-}
-
-#skills .col-md-6 {
-    padding-bottom: 48px;
-    text-align: center;
-    /*padding-left: 100px;
-}*/
 
 
 /* menu section */
 
 
-/*#menu {
+#menu {
     padding-top: 50px;
     padding-bottom: 50px;
-}*/
+}
 
 .title {
     font-size: 28px;
